@@ -25,6 +25,11 @@ public class JStrings {
 
         StringBuilder sb = new StringBuilder("hello");
         String s6 = sb.toString();
+        sb.append(" World");  // modifies same object
+
+        StringBuffer sbf = new StringBuffer("Hello");
+        sbf.append(" World");  // synchronized methods
+
 
         //5. Concatenation at Compile Time
         String s7 = "hel" + "lo";  // optimized at compile-time
